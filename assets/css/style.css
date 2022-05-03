@@ -1,0 +1,229 @@
+/* GLOBAL STYLES STARTS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container{
+    margin: 0 1.5rem;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color:var(--grey)
+}
+
+
+:root{
+    --primary-color: #FF4104;
+    --secondary-color: grey;
+    --black-color: #000;
+    --white-color: #fff;
+    --dark-grey:  #949494;
+    --light-grey: #f2f2f2;
+    --font-color: #1f1f1f;
+}
+
+
+body{
+    background-color: var(--light-grey);
+    /* color:  */
+}
+/* GLOBAL STYLES STARTS ENDS */
+
+
+/* PIC AND NAME SECTION STYLE STARTS */
+.picandname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+.picandname img{
+    width: 10%;
+    clip-path: circle();
+}
+
+.picandname h4{
+    margin-top: -1rem;
+    font-size: 22px;
+}
+
+.picandname h6{
+    font-size: 16px;
+}
+
+/* PIC AND NAME SECTION STYLE ENDS */
+
+
+/* SOCIAL MEDIA ICONS STYLE STARTS */
+
+#socialMedia .row{
+    margin: 1.5rem 0 1rem;
+}
+
+#socialMedia i{
+    padding: 5px;
+    font-size: 30px;
+    color: var(--dark-grey);
+}
+
+#socialMedia i:hover{
+    color: var(--primary-color);
+    transition: .7s;
+}
+/* SOCIAL MEDIA ICONS STYLE ENDS */
+
+
+/* EXPERIENCE INFO SECTION STARTS */
+#experience{
+    text-align: center;
+    
+}
+
+#experience .experienceInfo{
+    padding: 0 16px;
+    margin: 1rem 0;
+
+}
+
+#experience .experienceInfo h5{
+    font-size: 20px;
+}
+
+#experience .rowExp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+}
+/* EXPERIENCE INFO SECTION ENDS */
+
+
+/* CV AND CONTACTS BUTTON STARTS */
+#cvAndContact{
+    margin: 1.5rem 0;
+}
+
+#cvAndContact .downloadCvBtn{
+    margin: 0 2rem 0 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+#cvAndContact .downloadCvBtn:hover{
+    background-color: var(--dark-grey);
+    transition: .7s;
+}
+
+#cvAndContact .downloadCvBtn h5{
+    font-size: 18px;
+}
+
+#cvAndContact .downloadCvBtn h5 i{
+    margin: 0px 0 0 5px;
+}
+
+.whatsApp, .mail{
+    padding: 7px 10px 2px 10px;
+    background-color: var(--dark-grey);
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+
+.whatsApp i, .mail i{
+    text-align: center;
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+.whatsApp:hover, .mail:hover{
+    background-color: var(--primary-color);
+    transition: .7s;
+}
+
+/* CV AND CONTACTS BUTTON ENDS */
+
+
+/* PROJECTS AND SKILLS STYLE STARTS */
+
+/* PROJECTS AND SKILLS STYLE ENDS */
+
+
+
+/* CODE FOR TOGGLING BETWEEN THEME  STARTS*/
+.dark{
+    background-color: #222;
+    color: #e6e6e6;
+}
+
+#Knop {
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .dark .moon-icon, .sun-icon{
+    display: none;
+  }
+  
+  .dark .sun-icon {
+    display: inline;
+    color: var(--white-color);
+  }
+
+  .dark .moon-icon {
+      color: var(--black-color);
+  }
+
+  #themeChange .container .row{
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      max-width: 1040px;
+  }
+  /* CODE FOR TOGGLING BETWEEN THEME ENDS */
+
+#projects, #skills, #certs{
+    margin-top: 3rem;
+}
+
+#projects .container .row, #skills .container .row, #certs .container .row{
+      padding: 0 10rem;
+      margin: 0 0;
+  }
+
+#projects .logo-carousel-inner img, #skills .logo-carousel-inner img, #certs .logo-carousel-inner img{
+      width: 30%;
+  }
+
+  .single-logo-item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* text-align: center; */
+  }
+
+  @media screen and (max-width: 768px) {
+    #projects .container .row, #skills .container .row, #certs .container .row{
+        padding: 0 5rem;
+        /* margin: 2rem 0; */
+    }
+      
+  }
