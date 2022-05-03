@@ -206,7 +206,7 @@ body{
   /* CODE FOR TOGGLING BETWEEN THEME ENDS */
 
 #projects, #skills, #certs{
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 #projects .container .row, #skills .container .row, #certs .container .row{
@@ -230,6 +230,22 @@ body{
     #projects .container .row, #skills .container .row, #certs .container .row{
         padding: 0 5rem;
         /* margin: 2rem 0; */
+    }
+      
+  }
+
+  @media screen and (max-width: 375px) {
+    .picandname img{
+        width: 50%;
+        clip-path: circle();
+    }
+
+    hr{
+        width: 200px !important;
+    }
+
+    #cvAndContact .downloadCvBtn h5{
+        font-size: 14px;
     }
       
   }
