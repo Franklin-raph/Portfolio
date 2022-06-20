@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Raleway';
 }
 
 html, body{
@@ -169,9 +169,40 @@ body{
 
 /* PROJECTS AND SKILLS STYLE STARTS */
 
+#projects, #skills, #certs{
+    margin-top: 1rem;
+}
+
+.logo-carousel-inner{
+    padding: 9rem 0;
+}
+
+#projects .container .row, #skills .container .row, #certs .container .row{
+      padding: 0 10rem;
+      margin: 0 0;
+  }
+
+#projects .logo-carousel-inner img, #skills .logo-carousel-inner img, #certs .logo-carousel-inner img{
+      width: 30%;
+  }
+
+
+  .single-logo-item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* text-align: center; */
+  }
+
+  .horizontalLine1,.horizontalLine2,.horizontalLine3{
+    height: 1px;
+    width: 40%;
+    margin: 1rem auto 10px auto;
+    background-color: rgb(223, 223, 223);
+  }
+
 /* PROJECTS AND SKILLS STYLE ENDS */
-
-
 
 /* CODE FOR TOGGLING BETWEEN THEME  STARTS*/
 .dark{
@@ -205,35 +236,7 @@ body{
   }
   /* CODE FOR TOGGLING BETWEEN THEME ENDS */
 
-#projects, #skills, #certs{
-    margin-top: 1rem;
-}
 
-.logo-carousel-inner{
-    padding: 9rem 0;
-}
-
-#projects .container .row, #skills .container .row, #certs .container .row{
-      padding: 0 10rem;
-      margin: 0 0;
-  }
-
-#projects .logo-carousel-inner img, #skills .logo-carousel-inner img, #certs .logo-carousel-inner img{
-      width: 30%;
-  }
-
-  .single-logo-item{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      /* text-align: center; */
-  }
-
-  hr{
-    width:500px;
-    margin: auto;
-  }
 
   @media screen and (max-width: 768px) {
     #projects .container .row, #skills .container .row, #certs .container .row{
