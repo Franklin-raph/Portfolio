@@ -209,6 +209,10 @@ body{
     margin-top: 1rem;
 }
 
+.logo-carousel-inner{
+    padding: 9rem 0;
+}
+
 #projects .container .row, #skills .container .row, #certs .container .row{
       padding: 0 10rem;
       margin: 0 0;
@@ -226,6 +230,11 @@ body{
       /* text-align: center; */
   }
 
+  hr{
+    width:500px;
+    margin: auto;
+  }
+
   @media screen and (max-width: 768px) {
     #projects .container .row, #skills .container .row, #certs .container .row{
         padding: 0 5rem;
@@ -241,7 +250,7 @@ body{
     }
 
     hr{
-        width: 200px !important;
+        width: 200px;
     }
 
     #cvAndContact .downloadCvBtn h5{
